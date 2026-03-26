@@ -5,31 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mizton Apps</title>
   <style>
-    body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-           max-width: 600px; margin: 80px auto; padding: 0 20px; color: #333; text-align: center; }
-    h1   { font-size: 2em; color: #1a1a2e; }
-    p    { color: #666; }
-    .apps { display: flex; gap: 20px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
-    .app  { background: #f5f5f7; border-radius: 16px; padding: 24px 32px; text-decoration: none; color: #333; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+           max-width: 600px; margin: 80px auto; padding: 0 24px;
+           color: #1d1d1f; text-align: center; }
+    h1   { font-size: 2.2em; font-weight: 700; }
+    .sub { margin-top: 10px; color: #6e6e73; font-size: 15px; }
+    .apps { display: flex; flex-wrap: wrap; gap: 14px;
+             justify-content: center; margin-top: 48px; }
+    .app { background: #f5f5f7; border-radius: 14px; padding: 20px 28px;
+            text-decoration: none; color: #1d1d1f; font-size: 15px;
+            font-weight: 500; transition: background .15s; }
     .app:hover { background: #e8e8ed; }
-    .app h2 { margin: 0 0 8px; font-size: 1.2em; }
-    .app p  { margin: 0; font-size: 13px; color: #888; }
-    .footer { margin-top: 60px; color: #bbb; font-size: 12px; }
+    .footer { margin-top: 64px; color: #aeaeb2; font-size: 13px; }
   </style>
 </head>
 <body>
   <h1>Mizton</h1>
-  <p>简洁好用的本地播放器</p>
+  <p class="sub">隐私政策</p>
   <div class="apps">
-    <a class="app" href="/privacy/mizplayer/">
-      <h2>🎵 MizPlayer</h2>
-      <p>本地音乐播放器</p>
-    </a>
-    <a class="app" href="/privacy/vizplayer/">
-      <h2>🎬 VizPlayer</h2>
-      <p>本地视频播放器</p>
-    </a>
+    <a class="app" href="/privacy/mizplayer/">mizplayer</a>
+    <a class="app" href="/privacy/vizplayer/">vizplayer</a>
   </div>
-  <div class="footer">© 2025 Mizton · mizton@163.com</div>
+  <div class="footer">© 2026 Mizton · <a href="mailto:mizton@163.com" style="color:#aeaeb2">mizton@163.com</a></div>
 </body>
 </html>
