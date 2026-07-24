@@ -1,71 +1,199 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>扫描宝 隐私政策</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>扫描宝 Privacy Policy · 隐私政策</title>
+<style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
-    max-width: 760px; margin: 0 auto; padding: 40px 24px 80px;
-    color: #1d1d1f; line-height: 1.8; background: #fff;
-  }
-  .header { margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid #e5e5e7; }
-  .header h1 { font-size: 2em; font-weight: 700; color: #1d1d1f; }
-  .header p  { margin-top: 8px; color: #6e6e73; font-size: 14px; }
-  h2 { font-size: 1.1em; font-weight: 600; color: #1d1d1f;
-       margin-top: 36px; margin-bottom: 10px; }
-  p, li { font-size: 15px; color: #3d3d3f; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 6px; }
-  a  { color: #0066cc; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .tag {
-    display: inline-block; background: #f5f5f7; border-radius: 6px;
-    padding: 2px 8px; font-size: 13px; color: #6e6e73; margin-right: 4px;
-  }
-  .footer {
-    margin-top: 60px; padding-top: 20px; border-top: 1px solid #e5e5e7;
-    color: #aeaeb2; font-size: 13px;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: #f8f8fc; color: #1c1c2e; line-height: 1.8; }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .logo { width: 80px; height: 80px; border-radius: 20px;
+          background: linear-gradient(135deg, #6c63ff, #ff6b9d);
+          display: flex; align-items: center; justify-content: center;
+          margin: 0 auto 16px; font-size: 36px; }
+  h1 { font-size: 28px; font-weight: 700; color: #6c63ff; margin-bottom: 8px; }
+  .date { color: #6b6b8a; font-size: 14px; }
+  .lang-title { font-size: 22px; font-weight: 700; color: #6c63ff;
+                margin: 40px 0 16px; padding-left: 4px; }
+  .card { background: white; border-radius: 20px; padding: 32px;
+          margin-bottom: 16px; box-shadow: 0 2px 12px rgba(108,99,255,0.08); }
+  h2 { font-size: 17px; font-weight: 700; color: #1c1c2e;
+       margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  h2::before { content: attr(data-icon); font-size: 20px; }
+  p { color: #4a4a6a; font-size: 15px; margin-bottom: 12px; }
+  ul { color: #4a4a6a; font-size: 15px; padding-left: 20px; }
+  ul li { margin-bottom: 8px; }
+  a { color: #6c63ff; }
+  .highlight { background: #ede9ff; border-radius: 10px; padding: 16px 20px;
+               color: #4a3fd4; font-size: 14px; font-weight: 500; margin-top: 8px; }
+  .divider { height: 2px; background: linear-gradient(90deg, transparent, #d8d3ff, transparent);
+             margin: 56px 0 8px; }
+  .footer { text-align: center; color: #b0b0c8; font-size: 13px; margin-top: 48px; }
 </style>
 </head>
 <body>
+<div class="container">
   <div class="header">
-    <h1>扫描宝 隐私政策</h1>
-    <p>最后更新：2026年03月26日 &nbsp;·&nbsp; <span class="tag">com.scanner.docscaner</span></p>
+    <div class="logo">📄</div>
+    <h1>扫描宝 隐私政策 / Privacy Policy</h1>
+    <p class="date">最后更新 / Last updated: 2026-07-25</p>
   </div>
 
-  <p>智能文档扫描应用，自动识别边缘，透视矫正，一键导出PDF</p>
+  <!-- ==================== 中文 ==================== -->
+  <div class="lang-title">中文</div>
 
-  <h2>1. 信息收集</h2>
-  <p><strong>扫描宝 不收集、不上传任何个人信息。</strong>本应用完全离线运行，所有数据仅保存在您的设备本地，不与任何服务器通信。</p>
+  <div class="card">
+    <h2 data-icon="👋">欢迎使用扫描宝</h2>
+    <p>扫描宝（以下简称"本应用"）是一款文档扫描工具，由 hizton 开发。我们深知隐私对您的重要性，本政策清楚说明我们如何处理您的数据。</p>
+    <div class="highlight">✅ 核心承诺：您的<strong>文档内容</strong>（拍摄的图像、扫描结果）始终仅在设备本地处理，绝不上传至我们的服务器。为维持本应用免费，我们展示第三方广告，广告服务会收集有限的设备信息（详见下文），您可选择付费版以移除广告。</div>
+  </div>
 
-  <h2>2. 权限说明</h2>
-  <ul>
-    <li><strong>摄像头</strong>：拍摄文档图像，图像仅在设备本地处理，不上传</li>
-    <li><strong>存储空间</strong>：将扫描结果保存至设备图片/DocScaner目录</li>
-    <li><strong>读取图片（Android 13+）</strong>：在文件页展示已保存的扫描图片</li>
-  </ul>
+  <div class="card">
+    <h2 data-icon="📷">权限使用说明</h2>
+    <ul>
+      <li><strong>相机权限</strong>：仅用于拍摄文档图像。图像在设备本地处理，不会上传至我们的服务器。</li>
+      <li><strong>存储权限</strong>：仅用于将扫描结果保存至您设备的"图片/DocScaner"及"文档/DocScaner"目录。我们只读写该专属目录。</li>
+      <li><strong>媒体访问权限（Android 13+）</strong>：用于在文件页展示您之前保存的扫描图片。</li>
+      <li><strong>网络权限</strong>：仅用于加载第三方广告（见下方"第三方广告"），不用于传输您的任何文档。</li>
+    </ul>
+  </div>
 
-  <h2>3. 数据存储</h2>
-  <p>应用产生的所有数据（如收藏、播放列表、历史记录等）仅存储于设备本地数据库。卸载应用后数据将被系统自动清除。</p>
+  <div class="card">
+    <h2 data-icon="🔒">我们不收集什么</h2>
+    <ul>
+      <li>本应用<strong>不收集</strong>您的姓名、手机号、邮箱等个人身份信息。</li>
+      <li>本应用<strong>不收集</strong>您的位置信息、联系人或通话记录。</li>
+      <li>您扫描的<strong>文档图像与内容不会上传</strong>至我们的服务器，全部图像处理（边缘检测、透视矫正、增强）均在设备本地完成。</li>
+      <li>本应用<strong>不建立用户账号</strong>，无需注册登录。</li>
+    </ul>
+  </div>
 
-  <h2>4. 第三方服务</h2>
-  <p>本应用不集成任何第三方广告 SDK、数据分析服务或用户追踪工具，不向任何第三方传输用户数据。</p>
+  <div class="card">
+    <h2 data-icon="📢">第三方广告（Google AdMob）</h2>
+    <p>本应用免费版通过 Google AdMob 展示广告以支持运营。AdMob 是 Google 提供的广告服务，为投放广告可能收集以下信息：</p>
+    <ul>
+      <li><strong>广告标识符（Advertising ID / AAID）</strong>：一种设备级、可重置的广告 ID，用于展示相关性更高的广告及频次控制。</li>
+      <li><strong>粗略的设备与使用信息</strong>：如设备型号、操作系统版本、大致地理区域（基于 IP）、广告互动情况等。</li>
+    </ul>
+    <p>这些数据由 Google 依据其隐私政策收集与处理，<strong>我们本身不接收也不存储上述数据的明细</strong>。您可在系统"设置 → 隐私 → 广告"中重置或删除您的广告 ID，以限制个性化广告。</p>
+    <div class="highlight">📎 Google 如何使用数据：<a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a></div>
+    <p style="margin-top:12px">如您希望完全移除广告，可选择本应用的付费/无广告版本。</p>
+  </div>
 
-  <h2>5. 儿童隐私</h2>
-  <p>本应用不针对 13 岁以下儿童，也不会有意收集儿童的个人信息。</p>
+  <div class="card">
+    <h2 data-icon="🤝">信息共享</h2>
+    <p>除上述广告服务外，我们不会将您的任何数据出售、出租或转让给第三方。</p>
+    <p>仅在以下由<strong>您主动触发</strong>的操作中可能涉及数据传输：</p>
+    <ul>
+      <li>您点击"分享"时，通过系统分享菜单将文件发送给您选择的应用。</li>
+      <li>您点击 PDF 文件时，调用系统 PDF 阅读器打开（数据不离开设备）。</li>
+    </ul>
+  </div>
 
-  <h2>6. 政策变更</h2>
-  <p>本政策如有变更，将在本页面更新日期后发布，建议您定期查阅。</p>
+  <div class="card">
+    <h2 data-icon="🛡️">数据安全</h2>
+    <p>所有扫描文件存储于您的设备本地存储，受 Android 系统沙盒机制保护，其他应用无法访问本应用创建的私有文件。</p>
+    <p>卸载本应用后，设备存储中的扫描文件不会被自动删除（保护您的文档安全），您可手动在系统相册或文件管理器中删除。</p>
+  </div>
 
-  <h2>7. 联系我们</h2>
-  <p>如有任何隐私相关疑问，请发送邮件至：<a href="mailto:mizton@163.com">mizton@163.com</a></p>
+  <div class="card">
+    <h2 data-icon="👶">儿童隐私</h2>
+    <p>本应用不面向 13 岁以下儿童，亦不会有意收集儿童个人信息。广告已按 Google 政策配置为面向非儿童受众。如您是家长并发现您的孩子使用了本应用，请联系我们。</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📝">政策变更</h2>
+    <p>如本隐私政策发生重大变更，我们将通过应用内通知或本页面更新告知您。继续使用本应用即视为您接受更新后的政策。</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📬">联系我们</h2>
+    <p>如您对本隐私政策有任何疑问或建议，请通过以下方式联系开发者 hizton：</p>
+    <div class="highlight">📧 lmlizton430@gmail.com</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ==================== English ==================== -->
+  <div class="lang-title">English</div>
+
+  <div class="card">
+    <h2 data-icon="👋">Welcome to DocScaner</h2>
+    <p>DocScaner ("the App") is a document-scanning tool developed by hizton. We take your privacy seriously. This policy explains clearly how we handle your data.</p>
+    <div class="highlight">✅ Core promise: Your <strong>document content</strong> (captured images and scan results) is always processed locally on your device and is never uploaded to our servers. To keep the App free, we display third-party ads, and the ad service collects limited device information (see below). A paid, ad-free version is available if you prefer no ads.</div>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📷">Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong>: Used only to capture document images. Images are processed locally and are not uploaded to our servers.</li>
+      <li><strong>Storage</strong>: Used only to save scan results to the "Pictures/DocScaner" and "Documents/DocScaner" folders on your device. We only read from and write to these dedicated folders.</li>
+      <li><strong>Media access (Android 13+)</strong>: Used to display your previously saved scans on the Files page.</li>
+      <li><strong>Network</strong>: Used only to load third-party ads (see "Third-Party Advertising"), never to transmit any of your documents.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="🔒">What We Do NOT Collect</h2>
+    <ul>
+      <li>The App does <strong>not collect</strong> personally identifiable information such as your name, phone number, or email.</li>
+      <li>The App does <strong>not collect</strong> your location, contacts, or call logs.</li>
+      <li>Your scanned <strong>document images and content are never uploaded</strong> to our servers; all image processing (edge detection, perspective correction, enhancement) is done locally on the device.</li>
+      <li>The App does <strong>not create user accounts</strong>; no registration or login is required.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📢">Third-Party Advertising (Google AdMob)</h2>
+    <p>The free version of the App displays ads through Google AdMob to support its operation. AdMob is an advertising service provided by Google, which may collect the following to serve ads:</p>
+    <ul>
+      <li><strong>Advertising ID (AAID)</strong>: A resettable, device-level identifier used to show more relevant ads and to control ad frequency.</li>
+      <li><strong>Coarse device and usage information</strong>: such as device model, OS version, approximate region (based on IP address), and ad-interaction data.</li>
+    </ul>
+    <p>This data is collected and processed by Google under its own privacy policy. <strong>We ourselves do not receive or store the details of this data.</strong> You can reset or delete your Advertising ID and limit personalized ads via your device's "Settings → Privacy → Ads".</p>
+    <div class="highlight">📎 How Google uses data: <a href="https://policies.google.com/technologies/partner-sites" target="_blank">policies.google.com/technologies/partner-sites</a></div>
+    <p style="margin-top:12px">If you prefer no ads at all, a paid / ad-free version of the App is available.</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="🤝">Information Sharing</h2>
+    <p>Other than the advertising service described above, we do not sell, rent, or transfer any of your data to third parties.</p>
+    <p>Data transmission may only occur through actions <strong>you actively trigger</strong>:</p>
+    <ul>
+      <li>When you tap "Share", sending a file to an app of your choice via the system share sheet.</li>
+      <li>When you open a PDF, invoking the system PDF reader (data does not leave your device).</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="🛡️">Data Security</h2>
+    <p>All scanned files are stored in your device's local storage, protected by the Android sandbox mechanism. Other apps cannot access the private files created by this App.</p>
+    <p>After uninstalling the App, scanned files in device storage are not automatically deleted (to protect your documents); you may delete them manually via the system gallery or file manager.</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="👶">Children's Privacy</h2>
+    <p>The App is not directed to children under 13 and does not knowingly collect personal information from children. Ads are configured for a non-child audience per Google policy. If you are a parent and find that your child has used the App, please contact us.</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📝">Changes to This Policy</h2>
+    <p>If this Privacy Policy changes materially, we will notify you via an in-app notice or by updating this page. Continued use of the App constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="card">
+    <h2 data-icon="📬">Contact Us</h2>
+    <p>If you have any questions or suggestions about this Privacy Policy, please contact the developer hizton at:</p>
+    <div class="highlight">📧 lmlizton430@gmail.com</div>
+  </div>
 
   <div class="footer">
-    © 2026 Mizton. All rights reserved.
+    <p>© 2026 hizton · 扫描宝 DocScaner. All rights reserved.</p>
+    <p style="margin-top:8px">本政策适用于扫描宝 Android 应用 / This policy applies to the DocScaner Android app.</p>
   </div>
+</div>
 </body>
 </html>
